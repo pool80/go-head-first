@@ -12,4 +12,5 @@ func main() {
 	//у значений time.Time есть метод Year, который возвращает текущий год
 	var year int = now.Year()
 	fmt.Println(year)
+
 }
