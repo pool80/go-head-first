@@ -1,4 +1,4 @@
-###create a new repository on the command line
+### create a new repository on the command line
 
 ```
 echo "# go" >> README.md
@@ -9,7 +9,7 @@ git remote add origin https://github.com/pool80/go.git
 git push -u origin master
 ```
 
-###push an existing repository from the command line
+### push an existing repository from the command line
 ```
 git remote add origin https://github.com/pool80/go.git
 git push -u origin master
