@@ -8,7 +8,7 @@ func paintNeeded(width, height float64) float64 {
 	area := width * height
 
 	//функция возвращает расход краски
-	return area / 10
+	return area / 10.0
 	//выводим расход краски
 	//fmt.Printf("%.2f liters needed\n", area/10.0)
 }
