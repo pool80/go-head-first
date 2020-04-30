@@ -12,6 +12,7 @@ import (
 func getFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
+	//если при чтении ввода произошла ошибка, она будет возвращена функцией return 0, err
 	if err != nil {
 		//если при чтении ввода произошла ошибка, она будет возвращена функцией
 		return 0, err
@@ -19,6 +20,7 @@ func getFloat() (float64, error) {
 
 	input = strings.TrimSpace(input)
 	number, err := strconv.ParseFloat(input, 64)
+	//возвращает ошибки при преобразовании строки в float64
 	if err != nil {
 		return 0, err
 	}
@@ -28,6 +30,7 @@ func getFloat() (float64, error) {
 func main() {
 	fmt.Print("Enter a grade:")
 	grade, err := getFloat()
+	// если фуекция вернула ошибку, программа сообщает об этом и завершается
 	if err != nil {
 		log.Fatal(err)
 	}
