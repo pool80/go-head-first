@@ -30,7 +30,7 @@ func getFloat() (float64, error) {
 func main() {
 	fmt.Print("Enter a grade:")
 	grade, err := getFloat()
-	// если фуекция вернула ошибку, программа сообщает об этом и завершается
+	// если функция вернула ошибку, программа сообщает об этом и завершается
 	if err != nil {
 		log.Fatal(err)
 	}
