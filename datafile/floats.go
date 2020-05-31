@@ -2,7 +2,6 @@ package datafile
 
 import (
 	"bufio"
-	"log"
 	"os"
 	"strconv"
 )
